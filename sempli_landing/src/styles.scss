@@ -8,6 +8,7 @@ body {
 
 .navbar {
     height: 70px;
+    background-color: #5edfff;
 }
 
 
@@ -25,6 +26,11 @@ body {
     margin-bottom: 20px;
 }
 
+.navbar-nav a {
+    color: #050e32 !important;
+    font-weight: 500;
+}
+
 .navbar-toggler {
     background-color: #050e32;
     border-radius: 50%;
@@ -39,9 +45,29 @@ body {
 }
 
 #btn-login {
-    color: #050e32;
+    background-color: #3b64ff;
     border: 1px solid;
+    color: antiquewhite;
 }
+
+a .nav-link {
+    background-color: #3b64ff;
+}
+
+.jumbotron {
+    background: linear-gradient(270deg, #050E32, #3E64FF);
+}
+
+.container-hero {
+    column-count: 2;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img {}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
