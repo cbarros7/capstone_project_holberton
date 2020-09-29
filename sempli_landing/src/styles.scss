@@ -6,9 +6,19 @@ body {
     box-sizing: border-box;
 }
 
+.main-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
     height: 70px;
     background-color: #5edfff;
+}
+
+.navbar links {
+    justify-content: center;
 }
 
 
