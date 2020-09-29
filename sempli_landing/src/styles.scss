@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 70px;
+}
+
+
+/* .navbar-brand {
+    margin-top: 30px;
+} */
+
+.navbar-collapse {
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.navbar-toggler {
+    background-color: #050e32;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+#logo {
+    width: 250px;
+    height: 100px;
+    line-height: 70px;
+    margin-top: -25px;
+}
+
+#btn-login {
+    color: #050e32;
+    border: 1px solid;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #logo {
+        margin-top: 5px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
