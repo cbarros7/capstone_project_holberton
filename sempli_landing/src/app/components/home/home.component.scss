@@ -1,6 +1,7 @@
 .container-hero {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 
 .jumbotron {
@@ -10,8 +11,11 @@
 .hero-text {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    color: white;
 }
 
 .hero-img {
     display: flex;
+    flex-direction: column;
 }

@@ -64,29 +64,17 @@ a .nav-link {
     background-color: #3b64ff;
 }
 
-.jumbotron {
-    background: linear-gradient(270deg, #050E32, #3E64FF);
-}
-
-.container-hero {
-    column-count: 2;
-}
-
-.hero-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-img {}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) and (max-width: 767px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #logo {
         margin-top: 5px;
     }
