@@ -41,19 +41,26 @@ body {
 }
 
 .navbar-toggler {
-  background-color: #050e32;
+  background-color: #2f4fcf;
+  box-shadow: 0px 0px 3px white;
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 2.5vh;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 10.7vw;
+  height: 10vw;
 }
 
 #logo {
-  width: 13vw;
+  width: 22vh;
   line-height: 70px;
-  margin-top: -25px;
+  margin-bottom: 3vh;
 }
 
 #btn-login {
-  background-color: #3b64ff;
+  background-color: #3e64ff;
   border: 1px solid;
   color: antiquewhite;
   height: 4vh;
@@ -82,12 +89,21 @@ a .nav-link {
   position: relative;
   width: 100vw;
   height: 92vh;
+  background: #5EDFFF;
 }
 
-.log01top img {
-  object-fit: cover;
+.log01top .imtop {
+  position: absolute;
+  top: 0%;
+  left: 0%;
   width: 100vw;
-  height: 100vh;
+}
+
+.log01top .imbottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100vw;
 }
 
 .log01top h3 {
@@ -180,7 +196,7 @@ a .nav-link {
   background: #0e38d1;
 }
 
-@media (min-width: 576px) {
+@media (min-height: 300px) and (max-width: 850) {
   .log01 {
     height: 140vh;
     max-height: 100%;
@@ -190,8 +206,21 @@ a .nav-link {
   .log01 .log02 {
     padding: 0;
   }
-  .log01top img {
-    height: 140vh;
+  .log01top {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+    background: #5EDFFF;
+  }
+  .log01top .imtop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .log01top .imbottom {
+    display: none;
   }
   .log01top h3 {
     top: 3vh;
@@ -226,7 +255,7 @@ a .nav-link {
   }
   .log01top .log01bottom form button {
     margin-top: 7vh;
-    border: none;
+    border: 2px solid white;
     border-radius: 5px;
     color: white;
     padding: 10px 32px;
@@ -243,14 +272,24 @@ a .nav-link {
 
 @media (min-width: 576px) and (max-width: 767px) {
   .log01 {
-    height: 90vh;
+    height: 110vh;
+    width: 100vw;
+    max-width: 100%;
     max-height: 100%;
   }
   .log01 .log02 {
     padding: 0;
   }
-  .log01top img {
-    height: 90vh;
+  .log01top {
+    height: 110vh;
+  }
+  .log01top .imtop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .log01top .imbottom {
+    display: none;
   }
   .log01top h3 {
     top: 3vh;
@@ -261,31 +300,36 @@ a .nav-link {
     font-size: 4.5vh;
   }
   .log01top hr {
-    top: 17vh;
+    top: 15vh;
   }
   .log01top h4 {
     top: 23vh;
-    font-size: 2vh;
+    font-size: 3.5vh;
   }
   .log01top .log01bottom {
-    top: 43%;
-    height: 45vh;
+    top: 38%;
+    height: 60vh;
   }
   .log01top .log01bottom form {
     padding-top: 0vh;
   }
   .log01top .log01bottom form label {
     margin-top: 3vh;
-    font-size: 2vh;
+    font-size: 3vh;
   }
   .log01top .log01bottom form input {
-    height: 6vh;
-    font-size: 2.5vh;
+    height: 9vh;
+    width: 79vw;
+    font-size: 4vh;
     margin-bottom: 0vh;
+    color: #4a557e;
   }
   .log01top .log01bottom form button {
-    margin-top: 6vh;
-    padding: 23px 32px;
+    width: 79vw;
+    height: 12vh;
+    margin-top: 7vh;
+    padding: 0px 32px;
+    border: 2px solid white;
   }
   .log01top .log01bottom form button:hover {
     background: #3e64ff;
@@ -345,6 +389,7 @@ a .nav-link {
     margin-top: 6vh;
     padding: 23px 32px;
     width: 62vw;
+    border: 2px solid white;
   }
   .log01top .log01bottom form button:hover {
     background: #3e64ff;
@@ -407,6 +452,7 @@ a .nav-link {
     margin-top: 6vh;
     padding: 23px 32px;
     width: 43vw;
+    border: 2px solid white;
   }
   .log01top .log01bottom form button:hover {
     background: #3e64ff;
@@ -421,14 +467,14 @@ a .nav-link {
     margin-top: 5px;
   }
   .log01 {
-    height: 90vh;
+    height: 98vh;
     max-height: 100%;
   }
   .log01 .log02 {
     padding: 0;
   }
   .log01top img {
-    height: 90vh;
+    height: 80vh;
   }
   .log01top h3 {
     top: 3vh;
@@ -440,19 +486,19 @@ a .nav-link {
   }
   .log01top hr {
     top: 17vh;
-    left: 25vw;
-    width: 50vw;
+    left: 30vw;
+    width: 40vw;
   }
   .log01top h4 {
     top: 23vh;
-    left: 25vw;
-    width: 50vw;
+    left: 30vw;
+    width: 40vw;
     font-size: 2.2vh;
   }
   .log01top .log01bottom {
     top: 45%;
-    left: 25vw;
-    width: 50vw;
+    left: 30vw;
+    width: 40vw;
     height: 42vh;
   }
   .log01top .log01bottom form {
@@ -466,12 +512,13 @@ a .nav-link {
     height: 6vh;
     font-size: 2.5vh;
     margin-bottom: 0vh;
-    width: 43vw;
+    width: 33vw;
   }
   .log01top .log01bottom form button {
     margin-top: 6vh;
     padding: 23px 32px;
-    width: 43vw;
+    border: 2px solid white;
+    width: 33vw;
   }
   .log01top .log01bottom form button:hover {
     background: #3e64ff;
