@@ -14,6 +14,8 @@ body {
 .navbar {
   height: 70px;
   background-color: #5edfff;
+  box-shadow: 0px 0px 5px white;
+  border: #3b64ff;
 }
 
 .navbar links {
@@ -34,27 +36,36 @@ body {
 }
 
 .navbar-nav a {
-  color: #050e32 !important;
+  color: #ffffff !important;
   font-weight: 500;
 }
 
 .navbar-toggler {
   background-color: #050e32;
+  box-shadow: 0px 0px 3px white;
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 3px;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 40px;
+  height: 40px;
 }
 
 #logo {
-  width: 250px;
-  height: 100px;
+  width: 180px;
   line-height: 70px;
-  margin-top: -25px;
+  margin-bottom: 3;
 }
 
 #btn-login {
-  background-color: #3b64ff;
+  background-color: #3e64ff;
   border: 1px solid;
   color: antiquewhite;
+  height: 4vh;
+  padding: 5px 30px;
+  height: 30px;
 }
 
 a .nav-link {
@@ -63,7 +74,6 @@ a .nav-link {
 
 .log01 {
   position: relative;
-  background: red;
   padding: 0;
   margin: 0;
 }
@@ -79,12 +89,21 @@ a .nav-link {
   position: relative;
   width: 100vw;
   height: 92vh;
+  background: #5EDFFF;
 }
 
-.log01top img {
-  object-fit: cover;
+.log01top .imtop {
+  position: absolute;
+  top: 0%;
+  left: 0%;
   width: 100vw;
-  height: 100vh;
+}
+
+.log01top .imbottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100vw;
 }
 
 .log01top h3 {
@@ -104,6 +123,7 @@ a .nav-link {
   color: white;
   font-size: 3vh;
   font-weight: 800;
+  color: white;
 }
 
 .log01top hr {
@@ -111,7 +131,7 @@ a .nav-link {
   top: 12vh;
   left: 5vw;
   width: 90vw;
-  border-top: 7px solid rgba(255, 255, 255, 0.6);
+  border-top: 7px solid #3e64ff;
   border-radius: 7px;
 }
 
@@ -133,7 +153,7 @@ a .nav-link {
   width: 90vw;
   height: 40vh;
   opacity: 0.9;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(150, 135, 216, 0.3);
   border-radius: 3px;
 }
 
@@ -145,7 +165,7 @@ a .nav-link {
 
 .log01top .log01bottom form label {
   font-weight: 500;
-  color: #53929b;
+  color: #3e64ff;
 }
 
 .log01top .log01bottom form input {
@@ -154,13 +174,14 @@ a .nav-link {
   width: 75vw;
   height: 5.5vh;
   margin-bottom: 2vh;
+  color: #545a6e;
 }
 
 .log01top .log01bottom form button {
-  background: #56b8d1;
+  background: #3e64ff;
   /* Green */
   margin-top: 2vh;
-  border: none;
+  border: 2px solid white;
   border-radius: 5px;
   color: white;
   padding: 10px 32px;
@@ -172,10 +193,10 @@ a .nav-link {
 }
 
 .log01top .log01bottom form button:hover {
-  background: #3e64ff;
+  background: #0e38d1;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 300px) and (orientation: landscape) {
   .log01 {
     height: 140vh;
     max-height: 100%;
@@ -185,8 +206,21 @@ a .nav-link {
   .log01 .log02 {
     padding: 0;
   }
-  .log01top img {
-    height: 140vh;
+  .log01top {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+    background: #5EDFFF;
+  }
+  .log01top .imtop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .log01top .imbottom {
+    display: none;
   }
   .log01top h3 {
     top: 3vh;
@@ -221,7 +255,7 @@ a .nav-link {
   }
   .log01top .log01bottom form button {
     margin-top: 7vh;
-    border: none;
+    border: 2px solid white;
     border-radius: 5px;
     color: white;
     padding: 10px 32px;
@@ -236,8 +270,257 @@ a .nav-link {
   }
 }
 
+@media (min-width: 576px) and (orientation: landscape) {
+  .log01 {
+    height: 110vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .log01 .log02 {
+    padding: 0;
+  }
+  .log01top {
+    height: 110vh;
+  }
+  .log01top .imtop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .log01top .imbottom {
+    display: none;
+  }
+  .log01top h3 {
+    top: 3vh;
+    font-size: 4vh;
+  }
+  .log01top h1 {
+    top: 10vh;
+    font-size: 4.5vh;
+  }
+  .log01top hr {
+    top: 15vh;
+  }
+  .log01top h4 {
+    top: 23vh;
+    font-size: 3.5vh;
+  }
+  .log01top .log01bottom {
+    top: 38%;
+    height: 60vh;
+  }
+  .log01top .log01bottom form {
+    padding-top: 0vh;
+  }
+  .log01top .log01bottom form label {
+    margin-top: 3vh;
+    font-size: 3vh;
+  }
+  .log01top .log01bottom form input {
+    height: 9vh;
+    width: 79vw;
+    font-size: 4vh;
+    margin-bottom: 0vh;
+    color: #4a557e;
+  }
+  .log01top .log01bottom form button {
+    width: 79vw;
+    height: 12vh;
+    margin-top: 7vh;
+    padding: 0px 32px;
+    border: 2px solid white;
+  }
+  .log01top .log01bottom form button:hover {
+    background: #3e64ff;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .log01 {
+    height: 90vh;
+    max-height: 100%;
+  }
+  .log01 .log02 {
+    padding: 0;
+  }
+  .log01top img {
+    height: 90vh;
+  }
+  .log01top h3 {
+    top: 3vh;
+    font-size: 4vh;
+  }
+  .log01top h1 {
+    top: 10vh;
+    font-size: 4.5vh;
+  }
+  .log01top hr {
+    top: 17vh;
+    left: 15vw;
+    width: 70vw;
+  }
+  .log01top h4 {
+    top: 23vh;
+    left: 15vw;
+    width: 70vw;
+    font-size: 2.2vh;
+  }
+  .log01top .log01bottom {
+    top: 45%;
+    left: 15vw;
+    width: 70vw;
+    height: 42vh;
+  }
+  .log01top .log01bottom form {
+    padding-top: 0vh;
+  }
+  .log01top .log01bottom form label {
+    margin-top: 3vh;
+    font-size: 2vh;
+  }
+  .log01top .log01bottom form input {
+    height: 6vh;
+    font-size: 2.5vh;
+    margin-bottom: 0vh;
+    width: 62vw;
+  }
+  .log01top .log01bottom form button {
+    margin-top: 6vh;
+    padding: 23px 32px;
+    width: 62vw;
+    border: 2px solid white;
+  }
+  .log01top .log01bottom form button:hover {
+    background: #3e64ff;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   #logo {
     margin-top: 5px;
+  }
+  .log01 {
+    height: 90vh;
+    max-height: 100%;
+  }
+  .log01 .log02 {
+    padding: 0;
+  }
+  .log01top img {
+    height: 90vh;
+  }
+  .log01top h3 {
+    top: 3vh;
+    font-size: 4vh;
+  }
+  .log01top h1 {
+    top: 10vh;
+    font-size: 4.5vh;
+  }
+  .log01top hr {
+    top: 17vh;
+    left: 25vw;
+    width: 50vw;
+  }
+  .log01top h4 {
+    top: 23vh;
+    left: 25vw;
+    width: 50vw;
+    font-size: 2.2vh;
+  }
+  .log01top .log01bottom {
+    top: 45%;
+    left: 25vw;
+    width: 50vw;
+    height: 42vh;
+  }
+  .log01top .log01bottom form {
+    padding-top: 0vh;
+  }
+  .log01top .log01bottom form label {
+    margin-top: 3vh;
+    font-size: 2vh;
+  }
+  .log01top .log01bottom form input {
+    height: 6vh;
+    font-size: 2.5vh;
+    margin-bottom: 0vh;
+    width: 43vw;
+  }
+  .log01top .log01bottom form button {
+    margin-top: 6vh;
+    padding: 23px 32px;
+    width: 43vw;
+    border: 2px solid white;
+  }
+  .log01top .log01bottom form button:hover {
+    background: #3e64ff;
+  }
+}
+
+@media (min-width: 1200px) {
+  #logo {
+    margin-top: 5px;
+  }
+  #logo {
+    margin-top: 5px;
+  }
+  .log01 {
+    height: 98vh;
+    max-height: 100%;
+  }
+  .log01 .log02 {
+    padding: 0;
+  }
+  .log01top img {
+    height: 80vh;
+  }
+  .log01top h3 {
+    top: 3vh;
+    font-size: 4vh;
+  }
+  .log01top h1 {
+    top: 10vh;
+    font-size: 4.5vh;
+  }
+  .log01top hr {
+    top: 17vh;
+    left: 30vw;
+    width: 40vw;
+  }
+  .log01top h4 {
+    top: 23vh;
+    left: 30vw;
+    width: 40vw;
+    font-size: 2.2vh;
+  }
+  .log01top .log01bottom {
+    top: 45%;
+    left: 30vw;
+    width: 40vw;
+    height: 42vh;
+  }
+  .log01top .log01bottom form {
+    padding-top: 0vh;
+  }
+  .log01top .log01bottom form label {
+    margin-top: 3vh;
+    font-size: 2vh;
+  }
+  .log01top .log01bottom form input {
+    height: 6vh;
+    font-size: 2.5vh;
+    margin-bottom: 0vh;
+    width: 33vw;
+  }
+  .log01top .log01bottom form button {
+    margin-top: 6vh;
+    padding: 23px 32px;
+    border: 2px solid white;
+    width: 33vw;
+  }
+  .log01top .log01bottom form button:hover {
+    background: #3e64ff;
   }
 }
