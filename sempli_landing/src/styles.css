@@ -151,7 +151,7 @@ a .nav-link {
   top: 40%;
   left: 5vw;
   width: 90vw;
-  height: 40vh;
+  height: 42vh;
   opacity: 0.9;
   background: rgba(150, 135, 216, 0.3);
   border-radius: 3px;
@@ -196,7 +196,7 @@ a .nav-link {
   background: #0e38d1;
 }
 
-@media (min-width: 300px) and (orientation: landscape) {
+@media (min-width: 576px) {
   .log01 {
     height: 140vh;
     max-height: 100%;
@@ -270,7 +270,7 @@ a .nav-link {
   }
 }
 
-@media (min-width: 576px) and (orientation: landscape) {
+@media (min-width: 576px) and (max-width: 767px) {
   .log01 {
     height: 110vh;
     width: 100vw;
@@ -279,9 +279,13 @@ a .nav-link {
   }
   .log01 .log02 {
     padding: 0;
+    margin: 0;
   }
   .log01top {
     height: 110vh;
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%;
   }
   .log01top .imtop {
     position: absolute;
@@ -292,7 +296,7 @@ a .nav-link {
     display: none;
   }
   .log01top h3 {
-    top: 3vh;
+    top: 3.5vh;
     font-size: 4vh;
   }
   .log01top h1 {
@@ -304,7 +308,7 @@ a .nav-link {
   }
   .log01top h4 {
     top: 23vh;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
   }
   .log01top .log01bottom {
     top: 38%;
@@ -326,7 +330,7 @@ a .nav-link {
   }
   .log01top .log01bottom form button {
     width: 79vw;
-    height: 12vh;
+    height: 10vh;
     margin-top: 7vh;
     padding: 0px 32px;
     border: 2px solid white;
@@ -344,8 +348,13 @@ a .nav-link {
   .log01 .log02 {
     padding: 0;
   }
-  .log01top img {
-    height: 90vh;
+  .log01top .imtop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .log01top .imbottom {
+    display: none;
   }
   .log01top h3 {
     top: 3vh;
@@ -370,7 +379,7 @@ a .nav-link {
     top: 45%;
     left: 15vw;
     width: 70vw;
-    height: 42vh;
+    height: 45vh;
   }
   .log01top .log01bottom form {
     padding-top: 0vh;
@@ -387,7 +396,8 @@ a .nav-link {
   }
   .log01top .log01bottom form button {
     margin-top: 6vh;
-    padding: 23px 32px;
+    padding: 10px 32px;
+    height: 8vh;
     width: 62vw;
     border: 2px solid white;
   }
@@ -407,8 +417,13 @@ a .nav-link {
   .log01 .log02 {
     padding: 0;
   }
-  .log01top img {
-    height: 90vh;
+  .log01top .imtop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .log01top .imbottom {
+    display: none;
   }
   .log01top h3 {
     top: 3vh;
@@ -433,7 +448,7 @@ a .nav-link {
     top: 45%;
     left: 25vw;
     width: 50vw;
-    height: 42vh;
+    height: 45vh;
   }
   .log01top .log01bottom form {
     padding-top: 0vh;
@@ -450,7 +465,8 @@ a .nav-link {
   }
   .log01top .log01bottom form button {
     margin-top: 6vh;
-    padding: 23px 32px;
+    padding: 10px 32px;
+    height: 8vh;
     width: 43vw;
     border: 2px solid white;
   }
@@ -463,9 +479,6 @@ a .nav-link {
   #logo {
     margin-top: 5px;
   }
-  #logo {
-    margin-top: 5px;
-  }
   .log01 {
     height: 98vh;
     max-height: 100%;
@@ -473,8 +486,13 @@ a .nav-link {
   .log01 .log02 {
     padding: 0;
   }
-  .log01top img {
-    height: 80vh;
+  .log01top .imtop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .log01top .imbottom {
+    display: none;
   }
   .log01top h3 {
     top: 3vh;
@@ -499,7 +517,7 @@ a .nav-link {
     top: 45%;
     left: 30vw;
     width: 40vw;
-    height: 42vh;
+    height: 47vh;
   }
   .log01top .log01bottom form {
     padding-top: 0vh;
@@ -516,7 +534,8 @@ a .nav-link {
   }
   .log01top .log01bottom form button {
     margin-top: 6vh;
-    padding: 23px 32px;
+    padding: 10px 32px;
+    height: 8vh;
     border: 2px solid white;
     width: 33vw;
   }

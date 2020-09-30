@@ -148,7 +148,7 @@ a .nav-link {
         top: 40%;
         left: 5vw;
         width: 90vw;
-        height: 40vh;
+        height: 42vh;
         opacity: 0.9;
         background: rgba(150, 135, 216, 0.3);
         border-radius: 3px;
@@ -190,7 +190,7 @@ a .nav-link {
 }
 
 // Small devices (landscape phones, 576px and up) //pending
-@media (min-width: 300px) and (orientation: landscape) {
+@media (min-width: 576px)  {
     .log01 {
         height: 140vh;
         max-height: 100%;
@@ -266,7 +266,7 @@ a .nav-link {
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (orientation: landscape) {
+@media (min-width: 576px) and (max-width: 767px) {
     .log01 {
         height: 110vh;
         width: 100vw;
@@ -274,10 +274,15 @@ a .nav-link {
         max-height: 100%;
         .log02 {
             padding: 0;
+            margin: 0;
         }
     }
+
     .log01top {
         height: 110vh;
+        max-height: 100%;
+        width: 100vw;
+        max-width: 100%;
         .imtop {
             position: absolute;
             top: 0%;
@@ -288,7 +293,7 @@ a .nav-link {
         }
 
         h3 {
-            top: 3vh;
+            top: 3.5vh;
             font-size: 4vh;
         }
         h1 {
@@ -300,7 +305,7 @@ a .nav-link {
         }
         h4 {
             top: 23vh;
-            font-size: 3.5vh;
+            font-size: 2.5vh;
         }
         .log01bottom {
             top: 38%;
@@ -320,7 +325,7 @@ a .nav-link {
                 }
                 button {
                     width: 79vw;
-                    height: 12vh;
+                    height: 10vh;
                     margin-top: 7vh;
                     padding: 0px 32px;
                     border: 2px solid white;
@@ -344,9 +349,16 @@ a .nav-link {
         }
     }
     .log01top {
-        img {
-            height: 90vh; //ok
+
+        .imtop {
+            position: absolute;
+            top: 0%;
+            left: 0%;
         }
+        .imbottom {
+            display: none;
+        }
+
         h3 {
             top: 3vh;
             font-size: 4vh;
@@ -370,7 +382,7 @@ a .nav-link {
             top: 45%;
             left: 15vw;
             width: 70vw;
-            height: 42vh;
+            height: 45vh;
             form {
                 padding-top: 0vh;
                 label {
@@ -385,7 +397,8 @@ a .nav-link {
                 }
                 button {
                     margin-top: 6vh;
-                    padding: 23px 32px;
+                    padding: 10px 32px;
+                    height: 8vh;
                     width: 62vw;
                     border: 2px solid white;
                 }
@@ -413,9 +426,16 @@ a .nav-link {
         }
     }
     .log01top {
-        img {
-            height: 90vh; //ok
+        
+        .imtop {
+            position: absolute;
+            top: 0%;
+            left: 0%;
         }
+        .imbottom {
+            display: none;
+        }
+
         h3 {
             top: 3vh;
             font-size: 4vh;
@@ -439,7 +459,7 @@ a .nav-link {
             top: 45%;
             left: 25vw;
             width: 50vw;
-            height: 42vh;
+            height: 45vh;
             form {
                 padding-top: 0vh;
                 label {
@@ -454,7 +474,8 @@ a .nav-link {
                 }
                 button {
                     margin-top: 6vh;
-                    padding: 23px 32px;
+                    padding: 10px 32px;
+                    height: 8vh;
                     width: 43vw;
                     border: 2px solid white;
                 }
@@ -473,10 +494,6 @@ a .nav-link {
         margin-top: 5px;
     }
 
-    #logo {
-        margin-top: 5px;
-    }
-
     .log01 {
         height: 98vh;
         max-height: 100%;
@@ -485,9 +502,16 @@ a .nav-link {
         }
     }
     .log01top {
-        img {
-            height: 80vh;
+        //height: 98vh;
+        .imtop {
+            position: absolute;
+            top: 0%;
+            left: 0%;
         }
+        .imbottom {
+            display: none;
+        }
+
         h3 {
             top: 3vh;
             font-size: 4vh;
@@ -511,7 +535,7 @@ a .nav-link {
             top: 45%;
             left: 30vw;
             width: 40vw;
-            height: 42vh;
+            height: 47vh;
             form {
                 padding-top: 0vh;
                 label {
@@ -526,7 +550,8 @@ a .nav-link {
                 }
                 button {
                     margin-top: 6vh;
-                    padding: 23px 32px;
+                    padding: 10px 32px;
+                    height: 8vh;
                     border: 2px solid white;
                     width: 33vw;
                 }
