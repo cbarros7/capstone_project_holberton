@@ -64,8 +64,177 @@ a .nav-link {
     background-color: #3b64ff;
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) {}
+//ronnie
+.log01 {
+    position: relative;
+    background: red;
+    padding: 0;
+    margin: 0;
+    .log02 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+//ronnie
+.log01top {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+    img {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    h3 {
+        position: absolute;
+        top: 3vh;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        font-size: 3vh;
+        }
+    h1 {
+        position: absolute;
+        top: 8vh;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        font-size: 3vh;
+        font-weight: 800;
+        }
+    hr {
+        position: absolute;
+        top: 12vh;
+        left: 5vw;
+        width: 90vw;
+        border-top: 7px solid rgba(255, 255, 255, 0.6);
+        border-radius: 7px;
+        }
+    h4 {
+        position: absolute;
+        top: 18vh;
+        left: 5vw;
+        width: 90vw;
+        color: white;
+        font-size: 2vh;
+        text-align: justify;
+        }
+    .log01bottom {
+        position: absolute;
+        z-index: 1;
+        top: 40%;
+        left: 5vw;
+        width: 90vw;
+        height: 40vh;
+        opacity: 0.9;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+
+        form {
+            padding-top: 3vh;
+            padding-left: 3.5vw;
+            padding-right: 3.5vw;
+            label {
+                font-weight: 500;
+                color: rgb(83, 146, 155);
+            }
+            input {
+                border: none;
+                border-radius: 5px;
+                width: 75vw;
+                height: 5.5vh;
+                margin-bottom: 2vh;
+            }
+            button {
+                background: #56b8d1; /* Green */
+                margin-top: 2vh;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                padding: 10px 32px;
+                width: 75vw;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+            button:hover {
+                background: #3e64ff;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+    .log01 {
+        height: 140vh;
+        max-height: 100%;
+        width: 100vw;
+        max-width: 100%;
+        .log02 {
+            padding: 0;
+        }
+    }
+
+    .log01top {
+        img {
+            height: 140vh; //ok
+        }
+        h3 {
+            top: 3vh;
+            font-size: 5vh;
+            }
+        h1 {
+            top: 10.5vh;
+            font-size: 7vh;
+            }
+        hr {
+            top: 17vh;
+            }
+        h4 {
+            top: 26vh;
+            font-size: 3.5vh;
+            }
+        .log01bottom {
+            top: 50%;
+            height: 80vh;
+    
+            form {
+                padding-top: 5vh;
+                padding-left: 2.5vw;
+                padding-right: 2.5vw;
+                label {
+                    margin-top: 3vh;
+                }
+                input {
+                    height: 11vh;
+                    width: 80vw;
+                }
+                button {
+                    margin-top: 7vh;
+                    border: none;
+                    border-radius: 5px;
+                    color: white;
+                    padding: 10px 32px;
+                    width: 80vw;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                }
+                button:hover {
+                    background: #3e64ff;
+                }
+            }
+        }
+    }
+
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {}
