@@ -1,7 +1,7 @@
-<!--Footer Component-->
-<app-navbar></app-navbar>
-<div class="container-fluid main-container">
-    <router-outlet></router-outlet>
+<!-- Loader -->
+<div id="preloader" *ngIf="isLoading">
+  <div id="status">
+    <div class="spinner"></div>
+  </div>
 </div>
-<!--Footer Component-->
-<app-footer></app-footer>
+<router-outlet></router-outlet>

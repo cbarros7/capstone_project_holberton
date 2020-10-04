@@ -1,0 +1,200 @@
+/***********************************
+         process
+************************************/
+
+.process-list .col-sm-12 {
+    padding: 0 50px;
+}
+
+.process {
+    margin: 0px;
+    border: 2px dashed rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    min-height: inherit;
+}
+
+.process.left {
+    border-right: 0;
+    border-top: 0;
+}
+
+.process.right {
+    border-left: 0;
+    border-top: 0;
+}
+
+.process .border-area.left-bottom {
+    position: absolute;
+    bottom: -2px;
+    background: #b2fcff;
+    height: 110px;
+    width: 110px;
+    left: -2px;
+    z-index: 99;
+}
+
+.process .border-area.left-bottom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 70px;
+    border-left: 2px dashed rgba(0, 0, 0, 0.3);
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+}
+
+.process .border-area.right-top {
+    position: absolute;
+    top: -2px;
+    background: #b2fcff;
+    height: 110px;
+    width: 110px;
+    right: -2px;
+}
+
+.process .border-area.right-top:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 70px;
+    border-right: 2px dashed rgba(0, 0, 0, 0.3);
+    border-top: 2px dashed rgba(0, 0, 0, 0.3);
+}
+
+.process .border-area.right-bottom {
+    position: absolute;
+    bottom: -2px;
+    background: #b2fcff;
+    height: 110px;
+    width: 110px;
+    right: -2px;
+}
+
+.process .border-area.right-bottom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    top: 0;
+    border-bottom-right-radius: 70px;
+    border-right: 2px dashed rgba(0, 0, 0, 0.3);
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+}
+
+.process .border-area.left-top {
+    position: absolute;
+    top: -2px;
+    background: #b2fcff;
+    height: 110px;
+    width: 110px;
+    left: -2px;
+}
+
+.process .border-area.left-top:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    top: 0;
+    border-top-left-radius: 70px;
+    border-left: 2px dashed rgba(0, 0, 0, 0.3);
+    border-top: 2px dashed rgba(0, 0, 0, 0.3);
+}
+
+.process:first-child {
+    padding-top: 0;
+}
+
+.process.left:first-child .process-step {
+    top: 0;
+}
+
+.process:last-child {
+    border-bottom: 0;
+}
+
+.process:last-child .border-area.left-bottom {
+    bottom: 0;
+}
+
+.process:last-child .border-area.left-bottom:before {
+    border-bottom-left-radius: 0;
+    border-bottom: 0;
+}
+
+.process.left .process-step {
+    position: absolute;
+    top: 50px;
+    left: -35px;
+    z-index: 99;
+}
+
+.process.right .process-step {
+    position: absolute;
+    top: 50px;
+    right: -35px;
+    z-index: 99;
+}
+
+.process.left .process-content {
+    padding-left: 80px;
+}
+
+.process.right .process-content {
+    padding-right: 80px;
+}
+
+.process .process-step strong {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background: #3e64ff;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 99;
+    font-size: 20px;
+    color: #fff;
+}
+
+.process .process-content {
+    position: relative;
+    z-index: 99;
+}
+
+.process .process-content span {
+    font-size: 80px;
+    line-height: 80px;
+    color: #84ba3f;
+}
+
+.process.left .process-content .process-icon {
+    display: table-cell;
+    padding-right: 30px;
+}
+
+.process.left .process-content .process-info {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.process.right .process-content .process-icon {
+    float: right;
+    padding-left: 30px;
+}
+
+.process.right .process-content .process-info {
+    display: table-cell;
+    vertical-align: top;
+}

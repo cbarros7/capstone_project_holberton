@@ -1,0 +1,62 @@
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    /* .hero-text h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    
+    .nav-link {
+        padding: 0;
+    }
+    
+    #btn-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        .hero-text {
+            order: 2;
+        }
+        .hero-img {
+            order: 1;
+        }
+    }
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {}
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .hero-text {
+            order: 1;
+        }
+        .hero-img {
+            order: 2;
+        }
+    }
+    
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .hero-text {
+            display: flex;
+            justify-content: left;
+        }
+    }
