@@ -14,6 +14,7 @@ import {
   ArrowRightCircle, PieChart, Triangle
 } from 'angular-feather/icons';
 import { ScrollspyDirective } from './scrollspy.directive';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -27,9 +28,11 @@ const icons = {
   declarations: [AboutComponent, ContactComponent, FooterComponent, ScrollspyDirective, ProcessComponent, BenefitsComponent, TeamComponent],
   imports: [
     CommonModule,
-    FeatherModule.pick(icons)
+    FeatherModule.pick(icons),
+    CarouselModule
+
   ],
   // tslint:disable-next-line: max-line-length
-  exports: [AboutComponent, ContactComponent, FooterComponent, ProcessComponent, BenefitsComponent, TeamComponent, FeatherModule, ScrollspyDirective]
+  exports: [AboutComponent, ContactComponent, FooterComponent, ProcessComponent, BenefitsComponent, TeamComponent, FeatherModule, ScrollspyDirective, CommonModule, CarouselModule]
 })
 export class SharedModule { }

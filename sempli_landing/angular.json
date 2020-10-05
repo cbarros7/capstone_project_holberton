@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/lezir",
+                        "outputPath": "dist/sempli_project",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -90,10 +90,12 @@
                             "src/assets"
                         ],
                         "styles": [
+                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
                             "src/styles.scss"
                         ],
                         "scripts": [
-                            "node_modules/jquery/dist/jquery.min.js"
+                            "node_modules/jquery/dist/jquery.slim.min.js"
                         ]
                     }
                 },
@@ -125,7 +127,7 @@
             }
         }
     },
-    "defaultProject": "lezir",
+    "defaultProject": "Sempli Project",
     "cli": {
         "analytics": "52ba404a-763f-4a04-84f6-7f28621c0a19"
     }
