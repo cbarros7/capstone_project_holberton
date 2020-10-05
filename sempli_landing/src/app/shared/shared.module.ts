@@ -11,7 +11,7 @@ import { TeamComponent } from './team/team.component';
 import { FeatherModule } from 'angular-feather';
 import {
   Mail, Link, PhoneCall, Clock, MapPin, Facebook, Twitter, Instagram, Linkedin, Send, Calendar, User, Server, Rss, Layout, LifeBuoy,
-  ArrowRightCircle, PieChart, Triangle
+  ArrowRightCircle, PieChart, Triangle, Github
 } from 'angular-feather/icons';
 import { ScrollspyDirective } from './scrollspy.directive';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -20,12 +20,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
 const icons = {
   Mail, Link, PhoneCall, Clock, MapPin, Facebook, Twitter, Instagram, Linkedin, Send, Calendar, User, Server, Rss, Layout, LifeBuoy,
-  ArrowRightCircle, PieChart, Triangle
+  ArrowRightCircle, PieChart, Triangle, Github
 };
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [AboutComponent, ContactComponent, FooterComponent, ScrollspyDirective, ProcessComponent, BenefitsComponent, TeamComponent],
+  declarations: [AboutComponent, ContactComponent, FooterComponent, ScrollspyDirective, ProcessComponent, TeamComponent],
   imports: [
     CommonModule,
     FeatherModule.pick(icons),
@@ -33,6 +33,6 @@ const icons = {
 
   ],
   // tslint:disable-next-line: max-line-length
-  exports: [AboutComponent, ContactComponent, FooterComponent, ProcessComponent, BenefitsComponent, TeamComponent, FeatherModule, ScrollspyDirective, CommonModule, CarouselModule]
+  exports: [AboutComponent, ContactComponent, FooterComponent, ProcessComponent, TeamComponent, FeatherModule, ScrollspyDirective, CommonModule, CarouselModule]
 })
 export class SharedModule { }
