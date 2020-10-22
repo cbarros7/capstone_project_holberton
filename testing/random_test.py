@@ -44,11 +44,11 @@ def randomizer():
 
     # Building Keys and Values:
     # ------------------------------------------------
-    keys = ["clientId", "loanId", "state", "arrearDays", "montoAcumulado", "usoDeLosRecursos",
-            "plazo", "sector", "ingresos", "ubicacion", "procesosJudiciales", "alertas",
-            "scoreBureauEmpresa", "huellasDeConsulta", "websiteEmpresa", "instagramEmpresa",
-            "linkedInEmpresa", "edadEmpresarios", "activador", "noDeAccionistas", "impacto",
-            "accesoPrevioBanca", "noEmpleados", "mujeresEmpresarias", "mujeresEnCargosDirectivos"]
+    keys = ["client_id", "loan_id", "state", "arrears_days", "Monto Acumulado", "Uso de los recursos",
+            "Plazo", "Sector", "Ingresos", "Ubicación", "Procesos judiciales", "Alertas",
+            "Score Bureau Empresa", "Huellas de Consulta", "Website empresa", "Instagram empresa",
+            "LinkedIn empresa", "Edad empresarios", "Activador", "Número de accionistas", "Impacto",
+            "Acceso previso a la banca", "# Empleados",  "Mujeres empresarias", "Mujeres en cargos directivos"]
 
     values = [clientId, loanId, state, arrearDays, montoAcumulado, usoDeLosRecursos,
             plazo, sector, ingresos, ubicacion, procesosJudiciales, alertas,
@@ -71,8 +71,7 @@ def generate_data():
 
     # structure builder: object's array:
     for i in range(0, int(variable)):
-        new_list.append({'user{}'.format(i): randomizer()})
-
+        new_list.append(randomizer())
     # main object structure:
     new_dict = {'users': new_list}
 
