@@ -128,12 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# files
-*.ipynb
-*.py
-*.csv
-*.xlsx
-*.joblib
 
 # gitignore
 .gitignore
