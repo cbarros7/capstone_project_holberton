@@ -6,7 +6,7 @@ The aim of this project is to implement an automatic learning implementation alg
 
 ## Introduction 
 
-[**Sempli**](https://www.sempli.co/) is a finTech company, they already have a huge DataBase, and they need a machine learning ,model to predict payment customer’s behaviours, this will allow them make decisions, and increment the company’s productivity. This Project will help Sempli and their customers to improve on fast loan study processes, It will only suggest a basic customer’s classification and the behaviour will be initially evaluated by Sempli Grows/Financial/Risk managers. It is important to clarify that this project is not going to be in a deployment phase, it will be very limited to filtered excel data given by the customer, and the algorithm will not have self-training phases.
+This project was developed for a finTech company, they already have a huge DataBase, and they need a machine learning ,model to predict payment customer’s behaviours, this will allow them make decisions, and increment the company’s productivity. This Project will help them and their customers to improve on fast loan study processes, It will only suggest a basic customer’s classification and the behaviour will be initially evaluated by their Grows/Financial/Risk managers. It is important to clarify that this project is not going to be in a deployment phase, it will be very limited to filtered excel data given by the customer, and the algorithm will not have self-training phases.
 
 ## Technologies
 **1.) Frontend**
@@ -69,7 +69,7 @@ There will not be any API endpoints allowing other clients to use because we wil
 There will not be any 3rd party APIs on the project since we are not using any other source of information than the sensible data collected by the company (Sempli).
 
 
-## Team
+## Authors
 + [Andrés Hugueth](https://github.com/andreshugueth)
 + [Carlos Barros](https://github.com/cbarros7)
 + [Jose Vallejo](https://github.com/JoseAVallejo12) 
